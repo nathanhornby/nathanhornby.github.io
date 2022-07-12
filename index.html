@@ -1,1 +1,107 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nathan Hornby - Product Design Lead/Manager</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <style type="text/css">
+      /* Forgive me for I am not externally loaded, but efficient! */
+      body{
+        width:100%;
+        height:100%;
+        background: #FBFBFE;
+      }
+      header{
+        padding-top:100px;
+      }
+      header img{
+        position: absolute;
+        margin-left: -100px;
+        margin-top: -15px;
+        width: 168px;
+        height: 158px;
+      }
+      main{
+        padding-bottom:100px;
+      }
+      main,header{
+        width:750px;
+        margin: 0 auto;
+      }
+      h1,h2,p,a,em{
+        font-family: 'Lato', sans-serif;
+        line-height: 1.8;
+        font-weight: 300;
+        letter-spacing: 1px;
+        color: #272930;
+      }
+      p{
+        font-size: 20px;
+      }
+      h1,h2{
+        line-height: 1;
+        margin:0;
+        padding:0;
+      }
+      h1{
+        font-size: 56px;
+        text-transform: uppercase;
+        padding-left:106px;
+        letter-spacing: 6px;
+      }
+      h2{
+        font-size: 24px;
+        margin: 15px 0 100px;
+        padding-left:108px;
+        letter-spacing: 3px;
+      }
+      a{
+        font-weight: 400;
+        text-decoration: none;
+      }
+      a::after{
+        z-index:-1;
+        content:'';
+        position: absolute;
+        margin-left: -115px;
+        margin-top: 24px;
+        width: 115px;
+        background-color:#FEEFFB;
+        height: 10px;
+      }
+      a:hover::after{
+        background-color: #FFC5F2;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div>
+        <img src="nate.png" alt="Nathan Hornby smiling, complete with flowing locks." />
+        <h1>Nathan Hornby</h1>
+        <h2>Product Design Lead/Manager</h2>
+      </div>
+    </header>
+    <main>
+      <div>
+        <p>Hi, I'm Nate! I currently lead the Product Design team at Tax Systems, helping to transform an established, industry leading product into a cloud platform delivering extended value to its growing user-base.</p>
+
+        <p>With experience as an entrepreneur launching a successful product, managing my own design agency, working in-house, agency-side and as a contractor I have a diverse product design career that spans various industries and contexts.</p>
+
+        <p>I've had the pleasure of working with some very talented design and development teams, in both a lead and management capacity; mentoring juniors that have gone on to have exciting and successful careers.</p>
+
+        <p>Outside of my life-long fascination with design and psychology I’m also passionate about making music and art, and enjoy spending time in nature.</p>
+      </div>
+      <div class="special">
+        <p><em>I strive to work with skilled practitioners dedicated to delivering exceptional, inclusive user experiences.</em></p>
+      </div>
+      <div>
+        <p>If you'd like to explore the opportunity of working together then <a href="mailto:nathan.hornby@gmail.com">get in touch</a>, let's have a chat.</p>
+      </div>
+    </main>
+  </body>
+</html>
