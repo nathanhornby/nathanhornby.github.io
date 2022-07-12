@@ -1,1 +1,1 @@
-👋 Hi! You can see this website at [nathanhornby.com](http://nathanhornby.com)
+👋 Hi! You can see this website at [nathanhornby.com](https://nathanhornby.com)
