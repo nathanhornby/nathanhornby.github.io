@@ -3,44 +3,56 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Nathan Hornby - Product Design Lead/Manager</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
-    <style type="text/css">
-      /* Forgive me for I am not externally loaded, but efficient! */
+    <style>
+      /* Forgive me for I am not externally loaded or minified */
       body{
+        margin:0;
+        padding: 140px 0 100px;
         width:100%;
         height:100%;
         background: #FBFBFE;
       }
       header{
-        padding-top:100px;
+        padding-bottom: 100px;
       }
       header img{
         position: absolute;
-        margin-left: -100px;
-        margin-top: -15px;
+        margin-left: -40px;
+        margin-top: -17px;
         width: 168px;
         height: 158px;
       }
-      main{
-        padding-bottom:100px;
-      }
-      main,header{
-        width:750px;
+      main div,header div{
+        width:800px;
         margin: 0 auto;
       }
       h1,h2,p,a,em{
         font-family: 'Lato', sans-serif;
+        text-align: left;
         line-height: 1.8;
         font-weight: 300;
-        letter-spacing: 1px;
+        letter-spacing: 1.5px;
         color: #272930;
       }
       p{
         font-size: 20px;
+        color: #6C6E80;
+      }
+      .special{
+        width:100%;
+        margin: 60px 0;
+        padding: 30px 0;
+        background-color: #EFF3FE;
+      }
+      .special em{
+        font-size: 40px;
+        line-height: 1.7;
+        letter-spacing: 4px;
       }
       h1,h2{
         line-height: 1;
@@ -50,31 +62,70 @@
       h1{
         font-size: 56px;
         text-transform: uppercase;
-        padding-left:106px;
+        padding-left:163px;
         letter-spacing: 6px;
       }
       h2{
         font-size: 24px;
-        margin: 15px 0 100px;
-        padding-left:108px;
+        margin: 15px 0 0;
+        padding-left:165px;
         letter-spacing: 3px;
       }
       a{
         font-weight: 400;
         text-decoration: none;
+        white-space: pre;
+        text-align: none;
+        display: inline-block;
       }
       a::after{
         z-index:-1;
         content:'';
         position: absolute;
-        margin-left: -115px;
-        margin-top: 24px;
-        width: 115px;
-        background-color:#FEEFFB;
+        margin-left: -121px;
+        margin-top: 22px;
+        width: 121px;
+        background-color: #FFC5F2;
         height: 10px;
       }
+      a.linkedin::after{
+        margin-left: -88px;
+        width: 88px;
+      }
       a:hover::after{
-        background-color: #FFC5F2;
+        background-color: #D2DEFF;
+      }
+      @media screen and (max-width: 900px){
+        body{
+          padding-top: 100px;
+        }
+        main div,header div{
+          max-width:85%;
+          margin: 0 auto;
+        }
+        header{
+          padding-bottom: 40px;
+        }
+        h1{
+          padding-top: 200px;
+          padding-left: 0;
+          margin-left:-3px;
+          line-height: 1.1;
+        }
+        h2{
+          margin-top: 50px;
+          padding-left: 0;
+        }
+        p{
+          text-align: justify;
+        }
+        div.special p{
+          text-align: left;
+          padding-left: 5px;
+        }
+        div.special em{
+          font-size: 24px;
+        }
       }
     </style>
   </head>
@@ -88,7 +139,7 @@
     </header>
     <main>
       <div>
-        <p>Hi, I'm Nate! I currently lead the Product Design team at Tax Systems, helping to transform an established, industry leading product into a cloud platform delivering extended value to its growing user-base.</p>
+        <p>Hi, I'm Nate! I currently lead the Product Design team at Tax Systems, helping to transform an established, industry leading product into a cloud platform whilst delivering extended value to its growing user-base.</p>
 
         <p>With experience as an entrepreneur launching a successful product, managing my own design agency, working in-house, agency-side and as a contractor I have a diverse product design career that spans various industries and contexts.</p>
 
@@ -97,10 +148,14 @@
         <p>Outside of my life-long fascination with design and psychology I’m also passionate about making music and art, and enjoy spending time in nature.</p>
       </div>
       <div class="special">
-        <p><em>I strive to work with skilled practitioners dedicated to delivering exceptional, inclusive user experiences.</em></p>
+        <div></div>
+        <div class="main">
+          <p><em>I strive to work with skilled practitioners dedicated to delivering exceptional, inclusive user experiences.</em></p>
+        </div>
+        <div></div>
       </div>
       <div>
-        <p>If you'd like to explore the opportunity of working together then <a href="mailto:nathan.hornby@gmail.com">get in touch</a>, let's have a chat.</p>
+        <p>If you'd like to explore the opportunity of working together then go ahead and <a href="mailto:nathan.hornby@gmail.com">get in touch</a> or check out my <a class="linkedin" href="https://linkedin.com/in/nathanhornby">LinkedIn</a>. Thanks for stopping by ✌️</p>
       </div>
     </main>
   </body>
