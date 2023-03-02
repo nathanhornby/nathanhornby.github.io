@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nathan Hornby - Product Designer</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital@0;1&family=Open+Sans:ital,wght@0,300;0,500;1,300&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&family=Outfit:wght@600&display=swap" rel="stylesheet">
     <style>
       /* Forgive me for I am not externally loaded or minified */
       html,body{
@@ -14,98 +15,275 @@
         padding: 0;
         width:100%;
         height:100%;
+	  color: #353F88;
       }
       body{
-        padding: 140px 0 100px;
+        padding: 0 0 100px;
         background: #fff;
+	  text-align: center;
       }
-      main div,header div{
-        width:670px;
+      div.container{
+        width:970px;
         margin: 0 auto;
       }
-      h1,blockquote,p.bold{
+	p, cite, a{
         font-family: 'Noto Sans', sans-serif;
-        text-align: left;
         letter-spacing: 1.5px;
-      }
-      p{
-        font-family: 'Open Sans', sans-serif;
-        text-align: left;
-        line-height: 2;
-        font-weight: 300;
-        letter-spacing: 1.2px;
-        font-size: 16px;
-        color: #272930;
+        line-height: 1.8;
+        letter-spacing: 1.1px;
+        font-size: 18px;
         margin: 30px 0px;
       }
+	p.intro{
+	  padding: 0 84px;
+	}
       p.bold{
         font-size: 18px;
         line-height: 1.8;
       }
-      h1{
+	h1, h2{
+	  font-family: 'Outfit', sans-serif;
         line-height: 1;
         margin:0;
         padding:0;
-        font-size: 56px;
-        font-weight: 300;
-        letter-spacing: 3px;
-        padding-bottom:30px;
-        margin-left:-5px;
+	}
+      h1{
+	  font-family: 'Outfit', sans-serif;
+        font-size: 76px;
+        padding-bottom:10px;
       }
+	h2{
+	  font-size: 38px;
+	  line-height: 1.2;
+	}
       a{
-        color:#3246FF;
+	  color: #353F88;
         text-decoration: underline;
       }
       a:hover{
         text-decoration: none;
       }
-      #bar{
-        background:#FF4141;
-        width:4px;
-        height: 100%;
-        top:0;
-        display: inline-block;
-        float:left;
-        position: fixed;
+	a.button{
+	  display: inline-block;
+	  width: 260px;
+	  border-radius: 4px;
+	  background: #E2EDFA;
+	  padding: 15px 0;
+	  text-decoration: none;
+	  font-weight: 400;
+	  letter-spacing: 0px;
+	  margin: 0 8px;
+	  color: #353F88;
+	  font-size: 16px;
+	  font-weight: 600;
+	}
+	a.button:hover{
+	  background: #D1E6FF;
       }
+	a.primary {
+	 background: #FFEF9C;
+	 font-weight: 600;
+	}
+	a.primary:hover {
+	 background: #F5E070;
+	}
+	a.secondary {
+	 color: white;
+	 background: #2949B2;
+	 font-weight: 400;
+	}
+	a.secondary:hover {
+	 background: #2141A9;
+	}
+	header{
+	  background: rgb(63,76,192);
+	  background: linear-gradient(356deg, rgba(63,76,192,1) 0%, rgba(0,102,254,1) 100%);
+	  padding: 142px 0 132px;
+	  color: white;
+	}
+	header a.button{
+	  margin-top: 24px;
+      }
+	.content-block{
+	  padding: 136px 0;
+	}
+	footer{
+	  width: 596px;
+	  display:block;
+	  margin: 0 auto;
+	}
+      footer.content-block{
+	  padding-top: 0;
+	}
+	#current-status{
+	  text-align: left;
+	}
+	#current-status img{
+	  display: inline-block;
+	}
+	#current-status div.st-content{
+	  vertical-align: top;
+	  display: inline-block;
+	  width: 584px;
+	  padding: 28px 0 0 44px;
+	}
+	#current-status h2{
+	  padding-top:0;
+	}
+	#alert{
+	  display: table;
+	  height: 80px;
+	  width: 100%;
+	  background: #F43759;
+	  color: white;
+	  vertical-align: middle;
+	  padding-top: 3px;
+	}
+	#alert p{
+	  padding: 0 20px;
+	  margin: 0;
+	  display: table-cell;
+        vertical-align: middle;
+	}
+	#alert p a{
+	  color: white;
+	}
+	#alert p img{
+	  vertical-align: middle;
+	  margin: 0 20px 5px;
+	}
+	#testimonials{
+	  width: 100%;
+	  background:#F4F9FF;
+	}
+	#testimonials img{
+	  margin-top: 58px
+	}
+	#testimonials blockquote{
+	  position:relative;
+	  margin-bottom: 64px;
+	}
+	#testimonials blockquote p{
+	  padding: 0 20px;
+	  margin-top: 0;
+	}
+	#testimonials blockquote p::before, #testimonials blockquote p::after{
+	  content:'';
+	  display:block;
+	  position:absolute;
+	  left:-80px;
+	  top:-32px;
+	  width: 79px;
+	  height: 62px;
+	  background:url('img/quote.png');
+	  background-size:79px 62px;
+	}
+	#testimonials blockquote p::after{
+	  left:auto;
+	  top:auto;
+	  bottom: 18px;
+	  right: -80px;
+	  transform: rotate(180deg);
+	}
+	#testimonials cite{
+	  font-size: 14px;
+	  font-style: normal;
+	}
+	#clients ul{
+	  display: inline-block;
+	  padding: 0;
+	}
+	#clients ul li{
+	  display: inline;
+	  padding: 8px;
+	}
+	#clients ul li:first{
+	  padding-left: 0px;
+	}
+	#clients ul li:last{
+	  padding-right: 0px;
+	}
+      #clients img{
+	  width: 148px;
+	  height: 148px;
+	}
       @media screen
         and (max-width: 900px) {
-        main div,header div{
+        main div,header div, footer{
           max-width:85%;
           margin: 0 auto;
         }
-        h1{
-          font-size: 46px;
-        }
-        #bar{
-          height: 100vh;
-        }
+	  #alert, #testimonials{
+	    max-width: 100%;
+	  }
+	  h1{
+	    font-size: 52px;
+	  }
+	  h2{
+	    font-size: 32px;
+	  }
+	  p{
+	    font-size:16px;
+	  }
+	  p.intro{
+	    padding: 0 18px;
+	  }
+	  #current-status{
+	    text-align: inherit;
+	  }
+	  #current-status div.st-content{
+	    padding-left:0;
+	  }
       }
     </style>
   </head>
   <body>
     <header>
-      <div>
+      <div class="container">
         <h1>Nathan Hornby</h1>
-      </div>
+	  <p class="intro">Hi, I'm Nate 👋 A Product Designer with 20 years experience helping businesses to better understand their customers, solve problems, grow teams and produce award-winning, inclusive products.</p>
+        <a href="https://nathanhornby.com/nathanhornby-casestudies-lead.pdf" target="_blank" class="button secondary">Download Case Studies</a>
+	  <a href="https://linkedin.com/in/nathanhornby" target="_blank" class="button primary">Connect on LinkedIn</a>
+	</div>	
     </header>
     <main>
-      <div>
-        <p class="bold">Hi, I'm Nate 👋 I currently lead the Product Design team at Tax Systems, helping to transform an established, industry-leading desktop product into a collaborative, dynamic cloud platform that delivers extended value to its growing user-base.</p>
-
-        <p>With experience launching a successful product, managing my own small design agency, working in-house and as a contractor I have a diverse product design career that covers various industries, project types and methodologies.</p>
-
-        <p>I've had the pleasure of working with some very talented design and development teams, in both a lead and management capacity; mentoring designers that have gone on to have exciting careers. I’m equally capable of working independently and have a broad product skillset that can carry a project from discovery to delivery, and beyond.</p>
-
-        <p>Outside of my life-long fascination with design and psychology I’m also passionate about making music and art. When I’m not in the studio I like to spend as much time as possible outside enjoying nature.</p>
-
-        <!--<p>I’m currently looking for a permanent role that allows for mutual long-term growth, in a business that’s excited about how a modern product process can empower their strategy and improve their relationship with their customers.</p>-->
-      </div>
-      <div>
-        <p class="bold"><!--To find out more, <a href="#">download my case studies</a>. -->If you'd like to talk then <a href="https://linkedin.com/in/nathanhornby">connect on LinkedIn</a> or <a href="mailto:nathan.hornby@gmail.com">drop me an email</a>.</p>
-        <p class="bold">I look forward to hearing from you soon ✌️</p>
-      </div>
+      <div id="current-status" class="content-block">
+	  <div class="container">
+	    <img src="img/ts-logo.png" width="334px" alt="Tax Systems Logo" />
+	    <div class="st-content">
+	      <h2>Current status</h2>
+	      <p>I’m the <strong>Product Design Lead</strong> at <strong>Tax Systems</strong>, helping to transform an established, industry-leading desktop product into a collaborative, dynamic SaaS platform that delivers extended value to its growing user-base.</p>
+	    </div>
+	  </div>
+	</div>
+	<div id="alert">
+	  <p><img src="img/alert.png" width="38px" />I’m currently open to new opportunities, if you think we might be a good fit then <a href="mailto:nathan.hornby@gmail.com" title="Email Nathan">lets talk</a></p>
+	</div>
+	<div id="testimonials" class="content-block">
+	  <div class="container">
+	    <h2>Some things people are saying about me</h2>
+	    <img src="img/roi.png" width="172px" alt="Roi Lustik Cohen" />
+	    <blockquote>
+	      <p>Nathan is a professional that is great at his craft and pleasant to work with. You want your designer to strike a fine balance between supporting your ideas and leading you through good design principles and experience. Nathan manages it well, willing to listen while not letting you waste time on a bad idea.</p>
+	      <cite>Roi Lustik Cohen, CTO @ Arkk</cite>
+	    </blockquote>
+	    <a href="https://www.linkedin.com/in/nathanhornby/details/recommendations/" target="_blank" class="button">View all Recommendations</a>
+        </div>
+	</div>
+	<div id="clients" class="content-block">
+	  <ul>
+	    <li><img src="img/client-rspca.png" alt="RSPCA Logo" /></li>
+	    <li><img src="img/client-ocado.png" alt="Ocado Logo" /></li>
+	    <li><img src="img/client-sse.png" alt="SSE Logo" /></li>
+	    <li><img src="img/client-mind.png" alt="Mind Logo" /></li>
+	    <li><img src="img/client-equiniti.png" alt="Equiniti Logo" /></li>
+	    <li><img src="img/client-neptune.png" alt="Neptune Logo" /></li>
+	  </ul>
+	</div>
+      <footer class="content-block">
+	  <h2>Thanks for stopping by ✌️</h2>
+	  <p>Be sure to connect with me on <a href="https://linkedin.com/in/nathanhornby" target="_blank">LinkedIn</a>, <a href="https://medium.com/@nathanhornby" target="_blank">Medium</a> and <a href="https://github.com/nathanhornby" target="_blank">GitHub</a>. You can also <a href="https://nathanhornby.com/nathanhornby-cv-lead.pdf" target="_blank">download a copy of my CV</a>.</p>
+      </footer>
     </main>
-    <div id="bar"></div>
   </body>
 </html>
