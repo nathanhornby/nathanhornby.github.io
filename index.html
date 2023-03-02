@@ -155,6 +155,7 @@
 	#testimonials{
 	  width: 100%;
 	  background:#F4F9FF;
+	  overflow:hidden;
 	}
 	#testimonials img{
 	  margin-top: 58px
@@ -166,6 +167,7 @@
 	#testimonials blockquote p{
 	  padding: 0 20px;
 	  margin-top: 0;
+	  position: relative;
 	}
 	#testimonials blockquote p::before, #testimonials blockquote p::after{
 	  content:'';
@@ -181,7 +183,7 @@
 	#testimonials blockquote p::after{
 	  left:auto;
 	  top:auto;
-	  bottom: 18px;
+	  bottom: 28px;
 	  right: -80px;
 	  transform: rotate(180deg);
 	}
@@ -215,6 +217,9 @@
         }
 	  #alert, #testimonials{
 	    max-width: 100%;
+	  }
+	  #alert p{
+	    padding:20px;
 	  }
 	  #alert p img{
 	    display:none;
